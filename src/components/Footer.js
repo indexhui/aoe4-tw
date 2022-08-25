@@ -13,7 +13,9 @@ const Footer = () => {
       justify="center"
     >
       <Flex w="70%" justify="flex-end">
-        <Text>世紀帝國四 台灣最大交流群</Text>
+        <Text bgGradient="linear(to-l, #ffdf91, #cda351)" bgClip="text">
+          世紀帝國四 台灣最大交流群
+        </Text>
       </Flex>
     </Flex>
   );

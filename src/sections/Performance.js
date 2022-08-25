@@ -86,7 +86,7 @@ const Performance = () => {
             <Icon as={FaUserAstronaut} />
             <Text>主播賽評:</Text>
             <Link
-              src="https://www.youtube.com/channel/UCa-PX2Re1YFqhkelRckugdQ"
+              href="https://www.youtube.com/channel/UCa-PX2Re1YFqhkelRckugdQ"
               isExternal
             >
               <HStack px="2px" color="#ffdf91">
@@ -98,7 +98,7 @@ const Performance = () => {
             </Link>
             <Text>、</Text>
             <Link
-              src="https://www.youtube.com/channel/UCxcrPHiG88EKV_01b_K8dYg"
+              href="https://www.youtube.com/channel/UCxcrPHiG88EKV_01b_K8dYg"
               isExternal
             >
               <HStack px="2px" color="#ffdf91">
