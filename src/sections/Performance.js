@@ -12,6 +12,7 @@ import {
   FaUserAstronaut,
   FaCrown,
   FaHorseHead,
+  FaYoutube,
 } from 'react-icons/fa';
 
 import Container from 'components/layouts/Container';
@@ -65,21 +66,48 @@ const Performance = () => {
     <Container>
       <Flex wrap="wrap" w="100%" align="center">
         <Flex w={{ base: '100%', lg: '50%' }} direction="column">
-          <Text fontSize="22px" pb="10px">
+          <Text
+            fontSize="22px"
+            pb="10px"
+            bgGradient="linear(to-l, #ffdf91, #cda351)"
+            bgClip="text"
+          >
             世紀帝國四 - 台灣最大交流群 - 八強表演賽
           </Text>
           <Text>高手過招，各顯神通</Text>
           <Text>群雄爭霸，風起雲湧</Text>
           <Text>快攻？！塔攻？！直城？！直帝？！</Text>
           <Text>來看世紀帝國四高手如何出招，而對手又是如何反制</Text>
-          <HStack pt="12px">
+          <HStack pt="12px" fontSize="18px">
             <Icon as={FaRegCalendar} />
             <Text>週六 8月27日 20:00</Text>
           </HStack>
-          <HStack pt="5px">
+          <HStack pt="5px" fontSize="18px">
             <Icon as={FaUserAstronaut} />
             <Text>主播賽評:</Text>
-            <Text>青銅貓、喵式</Text>
+            <Link
+              src="https://www.youtube.com/channel/UCa-PX2Re1YFqhkelRckugdQ"
+              isExternal
+            >
+              <HStack px="2px" color="#ffdf91">
+                <Icon as={FaYoutube} />
+                <Text bgGradient="linear(to-l, #ffdf91, #cda351)" bgClip="text">
+                  青銅貓
+                </Text>
+              </HStack>
+            </Link>
+            <Text>、</Text>
+            <Link
+              src="https://www.youtube.com/channel/UCxcrPHiG88EKV_01b_K8dYg"
+              isExternal
+            >
+              <HStack px="2px" color="#ffdf91">
+                <Icon as={FaYoutube} />
+                <Text bgGradient="linear(to-l, #ffdf91, #cda351)" bgClip="text">
+                  喵式
+                </Text>
+              </HStack>
+            </Link>
           </HStack>
           <HStack py="20px">
             <Link href="https://www.twitch.tv/asiatwaoe4" isExternal>
@@ -124,7 +152,12 @@ const Performance = () => {
               rounded="md"
               direction="column"
             >
-              <Text fontSize="20px" pb="8px">
+              <Text
+                fontSize="20px"
+                pb="8px"
+                bgGradient="linear(to-l, #ffdf91, #cda351)"
+                bgClip="text"
+              >
                 {item.name}
               </Text>
               <Flex justify="space-between">
