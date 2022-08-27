@@ -70,7 +70,7 @@ const Schedule = () => {
             </VStack>
             <VStack spacing="1px">
               <MatchBox name="CongYang" state="0" />
-              <MatchBox name="觸手" state="0" />
+              <MatchBox name="zZOMyGoDZz" state="0" />
             </VStack>
             <VStack spacing="1px">
               <MatchBox name="小屁屁亨利" state="0" />
