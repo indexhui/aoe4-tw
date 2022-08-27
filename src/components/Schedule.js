@@ -91,8 +91,8 @@ const Schedule = () => {
           <Flex w="280px" direction="column" justify="space-between">
             <Text>決賽</Text>
             <VStack spacing="1px">
-              <MatchBox name="Whale" state="0" />
-              <MatchBox name="小屁屁亨利" state="0" />
+              <MatchBox name="Whale" state="1" point="2" />
+              <MatchBox name="小屁屁亨利" state="2" point="0" />
             </VStack>
           </Flex>
         </Flex>
