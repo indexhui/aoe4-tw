@@ -61,16 +61,16 @@ const Schedule = () => {
           <Flex w="280px" h="400px" direction="column" justify="space-between">
             <Text>八強賽</Text>
             <VStack spacing="1px">
-              <MatchBox name="Whale" state="0" />
-              <MatchBox name="小祤" state="0" />
+              <MatchBox name="Whale" state="1" point="1" />
+              <MatchBox name="小祤" state="2" point="0" />
             </VStack>
             <VStack spacing="1px">
-              <MatchBox name="Hopecat" state="0" />
-              <MatchBox name="觸手" state="0" />
+              <MatchBox name="Hopecat" state="1" point="1" />
+              <MatchBox name="觸手" state="2" point="0" />
             </VStack>
             <VStack spacing="1px">
-              <MatchBox name="CongYang" state="0" />
-              <MatchBox name="zZOMyGoDZz" state="0" />
+              <MatchBox name="CongYang" state="2" point="0" />
+              <MatchBox name="zZOMyGoDZz" state="1" point="1" />
             </VStack>
             <VStack spacing="1px">
               <MatchBox name="小屁屁亨利" state="0" />
@@ -80,11 +80,11 @@ const Schedule = () => {
           <Flex w="280px" h="280px" direction="column" justify="space-between">
             <Text>四強賽</Text>
             <VStack spacing="1px">
-              <MatchBox name="" state="0" />
-              <MatchBox name="" state="0" />
+              <MatchBox name="Whale" state="0" />
+              <MatchBox name="Hopecat" state="0" />
             </VStack>
             <VStack spacing="1px">
-              <MatchBox name="" state="0" />
+              <MatchBox name="zZOMyGoDZz" state="0" />
               <MatchBox name="" state="0" />
             </VStack>
           </Flex>
