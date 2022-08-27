@@ -54,6 +54,7 @@ const Schedule = () => {
         <Text pb="20px">賽程</Text>
         <Flex align="center">
           <Flex w="280px" h="400px" direction="column" justify="space-between">
+            <Text>八強賽</Text>
             <VStack spacing="1px">
               <MatchBox name="Whale" state="0" />
               <MatchBox name="小祤" state="0" />
@@ -72,6 +73,7 @@ const Schedule = () => {
             </VStack>
           </Flex>
           <Flex w="280px" h="280px" direction="column" justify="space-between">
+            <Text>四強賽</Text>
             <VStack spacing="1px">
               <MatchBox name="" state="0" />
               <MatchBox name="" state="0" />
@@ -82,6 +84,7 @@ const Schedule = () => {
             </VStack>
           </Flex>
           <Flex w="280px" direction="column" justify="space-between">
+            <Text>決賽</Text>
             <VStack spacing="1px">
               <MatchBox name="" state="0" />
               <MatchBox name="" state="0" />
