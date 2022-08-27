@@ -49,7 +49,12 @@ const MatchBox = props => {
 
 const Schedule = () => {
   return (
-    <Flex bg="#0F1519" w="100%" py="20px">
+    <Flex
+      bg="#0F1519"
+      w="100%"
+      overflowX={{ base: 'scroll', lg: 'unset' }}
+      py="20px"
+    >
       <Container>
         <Text pb="20px">賽程</Text>
         <Flex align="center">
