@@ -49,8 +49,13 @@ const Learn = () => {
           </Text>
         </Flex>
       </Flex>
-      <Flex w="100%" wrap="wrap">
-        <VStack w="50%" align="flex-start" spacing="7px">
+      <Flex w="100%" wrap="wrap" align="center">
+        <VStack
+          w={{ base: '100%', lg: '50%' }}
+          align="flex-start"
+          spacing="7px"
+          pb="12px"
+        >
           <Heading fontSize="20px">基礎課程教學</Heading>
           <HStack pt="12px" fontSize="18px">
             <Icon as={FaRegCalendar} />
