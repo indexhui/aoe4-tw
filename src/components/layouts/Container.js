@@ -8,7 +8,7 @@ const Container = props => {
         justify="center"
         align="center"
         px="24px"
-        w={{ base: '100%', lg: '75%' }}
+        w={{ base: '100%', lg: '75%', xl: '70%' }}
         {...props}
       ></Flex>
     </Flex>
