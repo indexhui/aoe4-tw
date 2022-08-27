@@ -73,8 +73,8 @@ const Schedule = () => {
               <MatchBox name="zZOMyGoDZz" state="1" point="1" />
             </VStack>
             <VStack spacing="1px">
-              <MatchBox name="小屁屁亨利" state="0" />
-              <MatchBox name="TC" state="0" />
+              <MatchBox name="小屁屁亨利" state="1" point="1" />
+              <MatchBox name="TC" state="2" point="0" />
             </VStack>
           </Flex>
           <Flex w="280px" h="280px" direction="column" justify="space-between">
@@ -85,7 +85,7 @@ const Schedule = () => {
             </VStack>
             <VStack spacing="1px">
               <MatchBox name="zZOMyGoDZz" state="0" />
-              <MatchBox name="" state="0" />
+              <MatchBox name="小屁屁亨利" state="0" />
             </VStack>
           </Flex>
           <Flex w="280px" direction="column" justify="space-between">
