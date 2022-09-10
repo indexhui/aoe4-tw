@@ -32,7 +32,7 @@ export function RookiePage() {
             bgClip="text"
             pb="30px"
           >
-            世紀帝國四 新秀盃 (報名中)
+            世紀帝國四 新秀盃 (進行中)
           </Heading>
           <Flex align="center">
             <Image src={intro} />
@@ -42,30 +42,21 @@ export function RookiePage() {
               <Text>地圖：乾燥阿拉伯</Text>
               <Text>報名即將額滿! 資格審核中</Text>
               <VStack>
-                <Link
-                  isExternal
-                  href="https://docs.google.com/forms/d/e/1FAIpQLScqypeHQnajfIOQRiincUbnkD7FWC4hwTFU81AXZ2HZfQBVRw/viewform?usp=sf_link"
-                >
+                <Link isExternal href="https://challonge.com/zh_TW/yulcf4y8">
                   <Button bgGradient="linear(to-l, #ffdf91, #cda351)">
-                    報名比賽
+                    賽事對戰表
                   </Button>
                 </Link>
               </VStack>
             </VStack>
           </Flex>
-          <Text py="20px" textAlign="center">
+          <Text py="20px" textAlign="center" minH="30vh">
             本次比賽的初衷是希望黃金段位以下的玩家，也能體驗一下賽場的樂趣
             <br />
             我們會幫打進四強的各位，錄製一份現場轉播，並上傳Youtube、Twitch
             <br />
             希望你們會喜歡！！
           </Text>
-          <ScheduleRookie />
-          <Flex direction="column">
-            <Heading> REGULATIONS 規章</Heading>
-            <Text>比賽相關規則： 即將公布</Text>
-            {/* <Text>即將公布</Text> */}
-          </Flex>
         </Container>
       </Flex>
     </PageMotion>

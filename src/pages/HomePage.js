@@ -3,6 +3,7 @@ import PageMotion from 'components/PageMotion';
 
 import BannerSwiper from 'components/BannerSwiper';
 import TutorialVideo from 'components/home/TutorialVideo';
+import Activity from 'components/home/Activity';
 
 export function HomePage() {
   return (
@@ -19,8 +20,8 @@ export function HomePage() {
         borderBottom={{ base: '5px solid #FFDC60', lg: '10px solid #FFDC60' }}
       >
         <BannerSwiper />
+        <Activity />
         <TutorialVideo />
-        <Text>home</Text>
       </Flex>
     </PageMotion>
   );

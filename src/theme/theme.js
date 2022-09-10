@@ -1,8 +1,8 @@
 import { extendTheme } from '@chakra-ui/react';
 import colors from 'theme/colors';
-// import Text from 'theme/text';
+import Text from 'theme/text';
+import Button from 'theme/button';
 // import Heading from 'theme/heading';
-// import Button from './components/button';
 
 const customTheme = {
   initialColorMode: 'light',
@@ -23,9 +23,9 @@ const customTheme = {
   colors,
 
   components: {
-    // Text,
+    Text,
+    Button,
     // Heading,
-    // Button,
     Switch: {
       baseStyle: {
         track: {

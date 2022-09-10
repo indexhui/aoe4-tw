@@ -12,24 +12,24 @@ import {
 import Container from 'components/layouts/Container';
 import Title from 'components/layouts/Title';
 
-import learn01 from 'assets/images/home/learn01.jpg';
-import learn02 from 'assets/images/home/learn02.jpg';
+import activity01 from 'assets/images/home/learn01.jpg';
+import activity02 from 'assets/images/activity/activity02.jpg';
 
 const learnList = [
   {
-    title: '基礎課程教學 (-)',
-    content: ' 針對完全沒有接觸過RTS的新手課程,不斷村、不斷羊，斥猴早期巡邏',
-    image: learn02,
-    time: '22/09/05',
-    link: 'https://www.youtube.com/watch?v=wxSgWlL4Hqs',
+    title: '新手黃金杯',
+    content: ' 四強賽將於 9/ 18 pm 8:00 正式於Twitch實況上開打',
+    image: activity02,
+    time: '22/09/14',
+    link: 'https://challonge.com/zh_TW/yulcf4y8',
   },
-  {
-    title: '全文明對戰流程教學',
-    content: ' 由征服者鯨魚主講八大文明開局流程',
-    image: learn01,
-    time: '22/08/15',
-    link: 'https://www.youtube.com/watch?v=9M0reyWh2v4',
-  },
+  // {
+  //   title: '八強表演賽',
+  //   content: ' 由征服者鯨魚主講八大文明開局流程',
+  //   image: learn01,
+  //   time: '22/08/15',
+  //   link: 'https://www.youtube.com/watch?v=9M0reyWh2v4',
+  // },
 ];
 
 const Card = props => {
@@ -61,10 +61,10 @@ const Card = props => {
   );
 };
 
-const TutorialVideo = () => {
+const Activity = () => {
   return (
     <Container>
-      <Title>教學影片</Title>
+      <Title>最新活動</Title>
       <Grid
         w="100%"
         templateColumns={{ base: 'repeat(1,1fr)', lg: 'repeat(3, 1fr)' }}
@@ -80,4 +80,4 @@ const TutorialVideo = () => {
   );
 };
 
-export default TutorialVideo;
+export default Activity;
