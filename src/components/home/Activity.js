@@ -44,6 +44,8 @@ const Card = props => {
       border="1px solid #b8862d"
       rounded="md"
       direction="column"
+      justify="space-between"
+      overflow="hidden"
     >
       <AspectRatio w="100%" ratio={2 / 1}>
         <Image src={image} />
