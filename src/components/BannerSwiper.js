@@ -6,6 +6,7 @@ import {
   AspectRatio,
   Text,
   Button,
+  Link,
 } from '@chakra-ui/react';
 
 import { Link as RouterLink } from 'react-router-dom';
@@ -93,13 +94,11 @@ const Swiper02 = () => {
           歡迎加入與我們一起遊玩
         </Text>
         <RouterLink to="game">
-          <Button
-            variant="main"
-            w="160px"
-            onClick={() => handleScroll('showGame')}
-          >
-            加入 Discord
-          </Button>
+          <Link href="https://discord.gg/XUZfGgDgjn">
+            <Button variant="main" w="160px">
+              加入 Discord
+            </Button>
+          </Link>
         </RouterLink>
       </VStack>
     </Flex>
@@ -125,15 +124,11 @@ const Swiper03 = () => {
         <Text variant="goldText" fontSize={{ base: '18px', lg: '24px' }}>
           免費教學資源
         </Text>
-        <RouterLink to="game">
-          <Button
-            variant="main"
-            w="160px"
-            onClick={() => handleScroll('showGame')}
-          >
+        <Link href="https://discord.gg/XUZfGgDgjn">
+          <Button variant="main" w="160px">
             加入 Discord
           </Button>
-        </RouterLink>
+        </Link>
       </VStack>
     </Flex>
   );
