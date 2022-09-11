@@ -1,5 +1,3 @@
-import { Link as RouterLink } from 'react-router-dom';
-
 import {
   Grid,
   GridItem,
@@ -14,35 +12,43 @@ import {
 import Container from 'components/layouts/Container';
 import Title from 'components/layouts/Title';
 
-import activity01 from 'assets/images/active01.jpg';
+import activity01 from 'assets/images/home/learn01.jpg';
 import activity02 from 'assets/images/activity/activity02.jpg';
+import game10 from 'assets/images/rookie/game10.jpg';
+import game5 from 'assets/images/rookie/game5.jpg';
+import game08 from 'assets/images/rookie/game08.jpg';
 
-const learnList = [
+const reviewList = [
   {
-    title: '新手黃金杯',
-    content: ' 四強賽將於 9/ 18 pm 8:00 正式於Twitch實況上開打',
-    image: activity02,
-    time: '22/09/14',
-    // link: 'https://challonge.com/zh_TW/yulcf4y8',
-    routerLink: '/game',
+    title: 'No.10 新秀盃16強 神羅 vs 英國',
+    content: '參賽選手: 呆呆 vs asd 546',
+    image: game10,
+    time: '22/09/12',
+    link: 'https://www.youtube.com/watch?v=i7LwqQpDbSc',
   },
   {
-    title: '八強表演賽',
-    content: '  八強表演賽 ◆ 完整版',
-    image: activity01,
-    time: '22/08/28',
-    link: 'https://www.youtube.com/watch?v=1Wf93rzb2rs',
+    title: 'No.5 新秀盃16強 法國 vs 英國',
+    content: '參賽選手: 阿峰 vs AAA',
+    image: game5,
+    time: '22/09/11',
+    link: 'https://www.youtube.com/watch?v=aMmC9xTnjQ8',
+  },
+  {
+    title: 'No.8 新秀盃16強 法國 vs 英國',
+    content: '參賽選手: 神奇海駝 vs 政客莉波',
+    image: game08,
+    time: '22/09/11',
+    link: 'https://www.youtube.com/watch?v=QZFRYXA-5f8',
   },
 ];
 
 const Card = props => {
-  const { image, title, content, link, routerLink, time } = props;
+  const { image, title, content, link, time } = props;
   return (
     <Flex
       h="100%"
-      as={routerLink ? RouterLink : Link}
+      as={Link}
       href={link}
-      to={routerLink}
       isExternal
       w="100%"
       border="1px solid #b8862d"
@@ -51,7 +57,7 @@ const Card = props => {
       justify="space-between"
       overflow="hidden"
     >
-      <AspectRatio w="100%" ratio={2 / 1}>
+      <AspectRatio w="100%" ratio={5 / 3}>
         <Image src={image} />
       </AspectRatio>
       <VStack w="100%" align="flex-start" p="12px">
@@ -67,23 +73,23 @@ const Card = props => {
   );
 };
 
-const Activity = () => {
+const GameReview = () => {
   return (
-    <Container>
-      <Title>最新活動</Title>
+    <Flex direction="column" w="100%" pt="40px" justify="center" align="center">
+      <Title>精彩回顧</Title>
       <Grid
         w="100%"
         templateColumns={{ base: 'repeat(1,1fr)', lg: 'repeat(3, 1fr)' }}
         gap={6}
       >
-        {learnList.map((item, index) => (
+        {reviewList.map((item, index) => (
           <GridItem w="100%" key={item.title}>
             <Card {...item} />
           </GridItem>
         ))}
       </Grid>
-    </Container>
+    </Flex>
   );
 };
 
-export default Activity;
+export default GameReview;
