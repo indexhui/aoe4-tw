@@ -107,13 +107,13 @@ const Header = () => {
         </RouterLink>
         <HStack display={{ base: 'none', lg: 'flex' }}>
           <HStack spacing="24px">
-            <Link href="https://challonge.com/zh_CN/yulcf4y8" isExternal>
-              <Text variant="goldText">新秀杯賽程表</Text>
-            </Link>
+            <RouterLink to="/game">
+              <Text variant="goldText">新秀黃金杯</Text>
+            </RouterLink>
             <Link href="https://www.twitch.tv/asiatwaoe4" isExternal>
               <HStack>
                 <Text variant="goldText">追蹤 Twitch</Text>
-                <Icon color="gold.600" as={FaTwitch} />
+                <Icon color="gold.500" as={FaTwitch} />
               </HStack>
             </Link>
           </HStack>
