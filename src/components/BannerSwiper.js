@@ -91,12 +91,12 @@ const Swiper02 = () => {
     >
       <VStack align="flex-start" spacing={{ base: '12px', lg: '20px' }}>
         <Text variant="goldText" fontSize={{ base: '18px', lg: '24px' }}>
-          歡迎加入與我們一起遊玩
+          隊友在靠杯 第一屆團戰比賽
         </Text>
         <RouterLink to="game">
-          <Link href="https://discord.gg/XUZfGgDgjn">
+          <Link href="https://docs.google.com/forms/d/e/1FAIpQLScvE-1XeLYaTwZnE-VdxkRHoad-a1BTUkDFd2B_3JyoefU2OQ/viewform?pli=1">
             <Button variant="main" w="160px">
-              加入 Discord
+              立刻報名
             </Button>
           </Link>
         </RouterLink>

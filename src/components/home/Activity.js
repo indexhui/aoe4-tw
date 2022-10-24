@@ -16,8 +16,17 @@ import Title from 'components/layouts/Title';
 
 import activity01 from 'assets/images/active01.jpg';
 import activity02 from 'assets/images/activity/activity02.jpg';
+import activity03 from 'assets/images/activity/activity03.jpg';
 
 const learnList = [
+  {
+    title: '隊友在靠杯',
+    content: ' 10/23 開始報名',
+    image: activity03,
+    time: '22/11/19',
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLScvE-1XeLYaTwZnE-VdxkRHoad-a1BTUkDFd2B_3JyoefU2OQ/viewform?pli=1',
+    // routerLink: '/game',
+  },
   {
     title: '新手黃金杯',
     content: ' 四強賽將於 9/ 18 pm 8:00 正式於Twitch實況上開打',
