@@ -154,10 +154,10 @@ const BannerSwiper = () => {
         // onSwiper={swiper => console.log(swiper)}
       >
         <SwiperSlide>
-          <Swiper01 />
+          <Swiper02 />
         </SwiperSlide>
         <SwiperSlide>
-          <Swiper02 />
+          <Swiper01 />
         </SwiperSlide>
         <SwiperSlide>
           <Swiper03 />
